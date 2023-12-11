@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dice Game</title>
+        <link rel="stylesheet" href="./dice.css">
+        <link rel="images" href="./images">
+        <script src="./dice.js"></script>
+    </head>
+    <body onload="" background="./images/DiceBackgroundImage.jpeg">
+        <div class="container">
+            <h1>Rolling Dice !</h1>
+            
+            <button onclick="play()" id="start" class="button">Play</button>
+            <div class="numberOfPlayers" id="numberOfPlayers" id="numberOfPlayersID">
+                <ol style="list-style-type: none;">
+                    <li><button onclick="start(1)" class="button">1 Player</button></li><br />
+                    <li><button onclick="start(2)" class="button">2 Player</button></li><br />
+                    <li><button onclick="start(3)" class="button">3 Player</button></li><br />
+                    <li><button onclick="start(4)" class="button">4 Player</button></li>
+                </ol>
+            </div>
+            <div class="allPlayers">
+                <div class="dice" id="playerVisibility1">
+                    <p>Player1</p>
+                    <img class="player1Image" src="" alt="imageOfDice">
+                </div>
+                <div class="dice" id="playerVisibility2">
+                    <p>Player2</p>
+                    <img class="player2Image" src="" alt="imageOfDice">
+                </div>
+                <div class="dice" id="playerVisibility3">
+                    <p>Player3</p>
+                    <img class="player3Image" src="" alt="imageOfDice">
+                </div>
+                <div class="dice" id="playerVisibility4">
+                    <p>Player4</p>
+                    <img class="player4Image" src="" alt="imageOfDice">
+                </div>
+            </div>
+
+            <div>
+                <input type="hidden" id="hiddenField" value="secretValue">
+                <button onclick="playAgain()" style="visibility: hidden; color: red;" id="refreshID">Roll Again</button>
+            </div>
+        </div>
+    </body>
+
+</html>
